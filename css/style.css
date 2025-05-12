@@ -110,7 +110,6 @@ header {
   padding: 0.6rem 3rem;
   width: 300px;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1333333333);
-  font-weight: bold;
 }
 
 @media (min-width: 738px) {
