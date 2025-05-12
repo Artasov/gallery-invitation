@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Prata&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@font-face {
+  font-family: "BalqisCyrillic-Script";
+  src: url("../assets/font/balqis-cyrillic-script.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.bgcolor1 {
+  background-color: #613f27;
+}
+
+.bgcolor2 {
+  background-color: #e1baa0;
+}
+
+.bgcolor3 {
+  background-color: #fcf3ec;
+}
+
+.bgcolor4 {
+  background-color: #613f27;
+}
+
+.color4 {
+  color: #613f27;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  background-color: #fcf3ec;
+}
+
+body {
+  font-family: "Times New Roman", serif;
+  color: #613f27;
+  line-height: 1.5;
+  background-color: #fcf3ec;
+}
+
+.prata-regular {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.balqis-regular {
+  font-family: "BalqisCyrillic-Script", serif;
+}
+
+header {
+  background: linear-gradient(to right, #613f27, #e1baa0);
+}
+
+.catalog-section {
+  background-color: #fcf3ec;
+}
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+}
+
+.xcard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: "BalqisCyrillic-Script", serif;
+}
+.xcard .xcard-img-block {
+  max-width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 490px) {
+  .xcard .xcard-img-block .card_img {
+    width: 100%;
+  }
+}
+.xcard .price-block {
+  padding: 0.3rem 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+.xcard .price-block .desc {
+  font-size: 1.7rem;
+}
+.xcard .price-block .price {
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

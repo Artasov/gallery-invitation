@@ -1,0 +1,106 @@
+// styles.sass
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap')
+
+
+@font-face
+  font-family: 'BalqisCyrillic-Script'
+  src: url('../assets/font/balqis-cyrillic-script.otf') format('opentype')
+  font-weight: normal
+  font-style: normal
+  font-display: swap
+
+// Переменные
+$font-main: 'BalqisCyrillic-Script', serif
+$color-bg-start: #613f27
+$color-bg-end: #e1baa0
+$color-white: #fcf3ec
+$color-text: #613f27
+$breakpoint-md: 768px
+$breakpoint-sm: 490px
+
+
+.bgcolor1
+  background-color: $color-bg-start
+
+.bgcolor2
+  background-color: $color-bg-end
+
+.bgcolor3
+  background-color: $color-white
+
+.bgcolor4
+  background-color: $color-text
+
+.color4
+  color: $color-text
+
+
+// Сбросы
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+*::before, *::after
+  box-sizing: border-box
+
+html
+  font-size: 16px
+  background-color: $color-white
+
+body
+  font-family: 'Times New Roman', serif
+  color: $color-text
+  line-height: 1.5
+  background-color: $color-white
+
+
+.prata-regular
+  font-family: "Prata", serif
+  font-weight: 400
+  font-style: normal
+
+.balqis-regular
+  font-family: $font-main
+
+
+// Hero
+header
+  background: linear-gradient(to right, $color-bg-start, $color-bg-end)
+
+.catalog-section
+  background-color: $color-white
+
+.catalog
+  display: flex
+  flex-direction: column
+
+.xcard
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  font-family: $font-main
+
+  .xcard-img-block
+    max-width: 100vw
+    display: flex
+    flex-wrap: wrap
+
+    .card_img
+      @media (max-width: $breakpoint-sm)
+        width: 100%
+
+  .price-block
+    padding: .3rem .7rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    flex-grow: 1
+    //gap: .5rem
+
+    .desc
+      font-size: 1.7rem
+
+    .price
+      font-size: 2rem
