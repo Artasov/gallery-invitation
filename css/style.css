@@ -82,7 +82,7 @@ header {
   display: flex;
   flex-wrap: wrap;
 }
-@media (max-width: 490px) {
+@media (max-width: 800px) {
   .xcard .xcard-img-block .card_img {
     width: 100%;
   }
@@ -107,12 +107,12 @@ header {
   color: #613f27;
   border-radius: 2.5rem;
   text-decoration: none;
-  padding: 0.6rem 3rem;
-  width: 300px;
+  padding: 1rem 3rem 0.6rem 3rem;
+  width: 320px;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1333333333);
 }
 
-@media (min-width: 738px) {
+@media (min-width: 800px) {
   .social-btn-with-margin {
     margin-right: 100px;
   }
