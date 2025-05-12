@@ -102,4 +102,21 @@ header {
   font-size: 2rem;
 }
 
+.social-btn {
+  background-color: #fcf3ec;
+  color: #613f27;
+  border-radius: 2.5rem;
+  text-decoration: none;
+  padding: 0.6rem 3rem;
+  width: 300px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1333333333);
+  font-weight: bold;
+}
+
+@media (min-width: 738px) {
+  .social-btn-with-margin {
+    margin-right: 100px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

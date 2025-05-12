@@ -15,7 +15,7 @@ $color-bg-start: #613f27
 $color-bg-end: #e1baa0
 $color-white: #fcf3ec
 $color-text: #613f27
-$breakpoint-md: 768px
+$breakpoint-md: 738px
 $breakpoint-sm: 490px
 
 
@@ -104,3 +104,18 @@ header
 
     .price
       font-size: 2rem
+
+
+.social-btn
+  background-color: $color-white
+  color: $color-text
+  border-radius: 2.5rem
+  text-decoration: none
+  padding: .6rem 3rem
+  width: 300px
+  box-shadow: 10px 10px 5px #0002
+  font-weight: bold
+
+@media (min-width: $breakpoint-md)
+  .social-btn-with-margin
+    margin-right: 100px
