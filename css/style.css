@@ -58,8 +58,18 @@ body {
   font-family: "BalqisCyrillic-Script", serif;
 }
 
-header {
+.bg-grad {
   background: linear-gradient(50deg, #4A3829, #B08662, #E0C0A5);
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+body, header {
+  background-color: transparent !important;
 }
 
 .catalog-section {
@@ -107,8 +117,8 @@ header {
   color: #613f27;
   border-radius: 2.5rem;
   text-decoration: none;
-  padding: 1rem 3rem 0.6rem 3rem;
-  width: 320px;
+  padding: 0.7rem 3rem 0.3rem 3rem;
+  width: 340px;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1333333333);
 }
 
@@ -120,6 +130,11 @@ header {
 @media (min-width: 1200px) {
   body {
     zoom: 1.3;
+  }
+}
+@media (min-width: 400px) {
+  .social-btn {
+    font-size: 2rem;
   }
 }
 

@@ -65,8 +65,17 @@ body
 
 
 // Hero
-header
+.bg-grad
   background: linear-gradient(50deg, $color-bg-start, $color-bg-mid, $color-bg-end)
+  height: 100vh
+  position: fixed
+  z-index: -1
+  top: 0
+  left: 0
+  width: 100vw
+
+body, header
+  background-color: transparent !important
 
 .catalog-section
   background-color: $color-white
@@ -111,10 +120,10 @@ header
   color: $color-text
   border-radius: 2.5rem
   text-decoration: none
-  padding: 1rem 3rem .6rem 3rem
-  width: 320px
+  padding: .7rem 3rem .3rem 3rem
+  width: 340px
   box-shadow: 10px 10px 5px #0002
-  //font-weight: bold
+//font-weight: bold
 
 @media (min-width: $breakpoint-md)
   .social-btn-with-margin
@@ -123,3 +132,7 @@ header
 @media (min-width: 1200px)
   body
     zoom: 1.3
+
+@media (min-width: 400px)
+  .social-btn
+    font-size: 2rem
